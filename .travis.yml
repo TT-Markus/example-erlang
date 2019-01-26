@@ -1,3 +1,4 @@
+sudo: required
 language: erlang
 otp_release:
   - 18.2.1
