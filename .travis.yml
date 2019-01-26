@@ -1,10 +1,11 @@
+sudo: required
 language: erlang
 otp_release:
   - 20.3.1
 before_install:
-  - pip install --upgrade pip
+  - sudo pip install --upgrade pip
 install:
-  - pip install codecov
+  - sudo pip install codecov
 script:
   - rebar3 eunit
 after_success:
